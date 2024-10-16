@@ -31,9 +31,9 @@ export default function Home() {
     queryKey: [debouncedPrompt],
     queryFn: async () => {
       const baseUrl =
-        process.env.NODE_ENV === "production"
-          ? process.env.NEXT_PUBLIC_VERCEL_URL
-          : "http://localhost:3000";
+        process.env.NODE_ENV === "development"
+          ?  "http://localhost:3000"
+          : "https://ai-image-generator-phi-seven.vercel.app" ;
 
       let res = await fetch(`${baseUrl}/api/generateImage`, {
         method: "POST",
