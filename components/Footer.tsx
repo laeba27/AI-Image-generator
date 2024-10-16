@@ -1,4 +1,4 @@
-import { Github,  } from "lucide-react"
+// import { Github,  } from "lucide-react"
 export const Footer = () => {
     return (
         <footer className="container mx-auto p-4 text-center  text-blue-400">
