@@ -3,6 +3,7 @@ import bgPattern from "@/public/bg-pattern-transparent.png";
 import PlausibleProvider from "next-plausible";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
+import { Toaster } from 'sonner'
 
 
 
@@ -27,6 +28,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </Providers>
+        <Toaster position="top-center" expand={true} richColors />
       </body>
     </html>
   );
